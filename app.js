@@ -52,12 +52,23 @@ app.get("/", function (req, res) {
     res.render("index");
 })
 
+app.get('/hel' , (req , res)=>{
+
+   res.send('hello from simple server :)')
+
+})
+
+
+app.get("/dis", function(req, res){
+    res.render("discussion");
+})
+
 
 
 
 
 // ----------------------------Listen-----------------------||
 
-app.listen(process.env.PORT || 8000, function () {
-    console.log("server started at port 8000");
+app.listen(process.env.PORT || 3000, function () {
+    console.log("server started at port 3000");
 });

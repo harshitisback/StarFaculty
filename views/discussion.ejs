@@ -1,0 +1,30 @@
+<%- include("header")  -%> 
+
+<div class="container">
+    <div class="left-side">
+      <h2>Sample Information</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum nisi sed velit aliquam, vel luctus eros placerat.</p>
+    </div>
+    <div class="right-side">
+      <h2>Sample Information</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum nisi sed velit aliquam, vel luctus eros placerat.</p>
+    </div>
+    <div class="chat-section">
+      <h2>Chat</h2>
+      <div class="chats">
+        <% for (var i = 0; i < chats.length; i++) { %>
+          <div class="chat">
+            <p><%= chats[i].text %></p>
+            <button class="reply-button">Reply</button>
+          </div>
+        <% } %>
+      </div>
+      <form action="/discussion" method="post">
+        <input type="text" name="chatText">
+        <input type="submit" value="Send">
+      </form>
+    </div>
+  </div>
+
+
+<%- include("foot") -%> 

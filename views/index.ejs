@@ -1,78 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
-
-  <link rel="stylesheet" href="css/style.css">
-  <title>Star Faculty</title>
-</head>
-
-<body>
-  <nav>
-    <div class="logo">
-      <img src="img/feedback.png" alt="Logo">
-    </div>
-    <div class="brand">Star Faculty</div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li>
-        <a href="#services">Services</a>
-        <ul>
-          <li><a href="#services-design">Design</a></li>
-          <li><a href="#services-development">Development</a></li>
-          <li><a href="#services-consulting">Consulting</a></li>
-        </ul>
-      </li>
-      <button class="contact"><li><a href="#contact">Contact</a></li></button>
-      
-    </ul>
-  </nav>
-
- 
-  
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to the Government Faculty Review System</h1>
-      <p class="hero-para">This website is designed to help faculty members at government institutions share feedback
-        and evaluations of their colleagues.
-        The review process is intended to be a constructive and professional way for faculty to improve their teaching
-        and research skills
-        and contribute to the overall success of the institution.</p>
-        <button class="btn btn-border" type="button">Learn More</button>
 
 
-      <!-- HTML -->
-      <div class="container mt-5 btn-sign">
-        <div class="row justify-content-center">
-          <div class="col-auto">
-            <button class="btn btn-light btn-lg" type="button">Sign In</button>
-          </div>
-          <div class="col-auto">
-            <button class="btn btn-info btn-lg" type="button">Sign Up</button>
+<%- include("header") -%> 
+  <!-- navbar -->
+  <%- include ("navbar") -%>
+
+
+
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="head_hero">Welcome To the Government Faculty Review System</h1>
+        <p class="hero-para">This website is designed to help faculty members at government institutions share feedback
+          and evaluations of their colleagues.
+          The review process is intended to be a constructive and professional way for faculty to improve their teaching
+          and research skills
+          and contribute to the overall success of the institution.</p>
+        <button class="btn btn-border" type="button"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+        </svg> </button>
+
+
+        <!-- HTML -->
+        <div class="container mt-5 btn-sign">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <button class="btn btn-light btn-lg" type="button"><img src="img/box-arrow-in-right.svg" alt=""> Sign In</button>
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-info btn-lg" type="button">  Sign Up <img src="img/info-square.svg" alt=""></button>
+            </div>
           </div>
         </div>
+
+
       </div>
 
 
-    </div>
+
+    </section>
 
 
 
-  </section>
-
-  
-    
-    <%- include ("foot") -%> 
+    <%- include ("foot") -%>
 
 
- 
 
-
-</body>
-
-</html>
